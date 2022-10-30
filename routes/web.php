@@ -8,6 +8,7 @@ use App\Http\Controllers\DataPembelianController;
 use App\Http\Controllers\DataTransaksiController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -38,3 +39,4 @@ Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('a
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/Contact', [App\Http\Controllers\ContactController::class],'Contact')->name('Contact');
