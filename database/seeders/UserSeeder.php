@@ -39,7 +39,16 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('1234'),
                 'level' => 'Admin',
                 'tanggal_join' => '2022-06-04',
+            ],
+            [
+                'foto' => '',
+                'nama' => 'Ayu',
+                'email' => 'ayu@gmail.com',
+                'password' => Hash::make('1234'),
+                'level' => 'user',
+                'tanggal_join' => '2022-06-04',
             ]
+
             ]);
     }
 }

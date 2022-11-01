@@ -15,7 +15,15 @@
                                 BJM BENGKEL MOBIL
                             </a>
                         </div>
-
+                        @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                         <div class="card-body p-4">
 
                             <div class="text-center w-75 m-auto">
@@ -80,7 +88,7 @@
     <!-- end page -->
 
     <footer class="footer footer-alt">
-        2022 © - Afvanie - Ridho
+        2022 © - BJM Bengkel
     </footer>
 </div>
 

@@ -23,7 +23,7 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
-    
+
 
     /**
      * Where to redirect users after registration.
@@ -54,7 +54,6 @@ class RegisterController extends Controller
             'nama' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:3', 'confirmed'],
-            'level' => ['required','string','max:255'],
             'tanggal_join'=> ['required'],
         ]);
     }
@@ -71,7 +70,6 @@ class RegisterController extends Controller
             'nama' => $data['nama'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'level'=>$data['level'],
             'tanggal_join'=>$data['tanggal_join'],
 
         ]);

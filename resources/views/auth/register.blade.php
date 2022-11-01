@@ -16,7 +16,15 @@
                             </div>
 
                             <div class="card-body p-4">
-
+                                @if (count($errors) > 0)
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                                 <div class="text-center w-75 m-auto">
                                     <h4 class="text-dark-50 text-center mt-0 fw-bold">Daftar</h4>
                                     <p class="text-muted mb-4">Belum Punya Akun? Silahkan Daftar Disini</p>
@@ -72,7 +80,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="hidden" value="petugas" name="level">
+                                    <input type="hidden" name="level">
                                     <input type="hidden" value="@php echo date('Y-m-d'); @endphp" name="tanggal_join">
                                     <div class="mb-3 text-center">
                                         <button class="btn btn-primary" type="submit"> Daftar </button>
