@@ -8,12 +8,12 @@
             <ul>
                 {{-- untuk mengecek apakah sudah login atau belum/sesition --}}
                 @guest
-                <li><a class="nav-link scrollto active" href="">Home</a></li>
+                <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="/AboutUs">About</a></li>
                 <li><a class="nav-link scrollto" href="/Contact">Contact</a></li>
                 <li><a class="getstarted scrollto" href="login">Log In</a></li>
                 @else 
-                <li><a class="nav-link scrollto active" href="">Home</a></li>
+                <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" href="/AboutUs">About</a></li>
                 <li><a class="nav-link scrollto" href="/Contact">Contact</a></li>
                 <li><a class="nav-link scrollto" href="login">{{Auth::user()->nama}}</a></li>

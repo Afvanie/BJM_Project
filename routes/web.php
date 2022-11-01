@@ -45,3 +45,4 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/Contact', [App\Http\Controllers\ContactController::class],'Contact')->name('Contact');
+Route::get('/AboutUs', [App\Http\Controllers\AboutUsController::class, 'index'])->name('AboutUs');
