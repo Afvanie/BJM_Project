@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="home/assets/img/favicon.png" rel="icon">
-    <link href="home/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="home/assets/img/Logo BJM.png" rel="icon">
+    <link href="home/assets/img/Logo BJM.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -40,11 +40,10 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Contact</a></li>
-
-                    <li><a class="getstarted scrollto" href="#about">Log In</a></li>
+                    <li><a class="nav-link scrollto active" href="">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/AboutUs">About</a></li>
+                    <li><a class="nav-link scrollto" href="/Contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="login">Log In</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -61,11 +60,11 @@
                     <h1>BJM Bengkel Mobil</h1>
                     <h2>Memberikan solusi terbaik untuk kendaraan mobil Anda</h2>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="#about" class="btn-get-started scrollto">Register</a>
+                        <a href="register" class="btn-get-started scrollto">Register</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="home/assets/img/hero-img.png" class="img-fluid animated" alt="">
+                    <img src="home/assets/img/Logo BJM.png" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
@@ -80,7 +79,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <h4>Bengkel Online Mobil</h4>
-                                <p>Percayakan Dokter Mobil untuk atasi berbagai permasalahan mobil Anda, dari</p>
+                                <p>Percayakan kepada mekanik kami untuk atasi berbagai permasalahan mobil Anda, dari</p>
                                 <p>perawatan AC mobil hingga memaksimalkan perfoma mobil</p>
                             </div>
                         </div>
@@ -96,35 +95,32 @@
                                 <p>Bengkel Mobil Sidoarjo <br>&copy; 2022 <strong><span>BJM</span></strong>. All Rights Reserved</p>
                             </div>
 
-                            <div class="col-lg-2 col-md-6 footer-links">
+                            <div class="col-lg-3 col-md-6 footer-links">
                                 <h4>Link</h4>
                                 <ul>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Login</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="">Home</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="/AboutUs">About us</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="/Contact">Contact</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Login</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="register">Register</a></li>
                                 </ul>
                             </div>
 
                             <div class="col-lg-3 col-md-6 footer-links">
                                 <h4>Layanan Kami</h4>
                                 <ul>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Penyedia Service Panggilan</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Diagnosa Kerusakan Mobil</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Sistem Sewa</a></li>
-                                    <li><i class="bx bx-chevron-right"></i> <a href="#">Service Mobil</a></li>
-                                    {{-- <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li> --}}
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Penyedia Service Panggilan</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Diagnosa Kerusakan Mobil</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Sistem Sewa</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Service Mobil</a></li>
                                 </ul>
                             </div>
 
-                            <div class="col-lg-4 col-md-6 footer-links">
+                            <div class="col-lg-3 col-md-6 footer-links">
                                 <h4>IKUTI KAMI</h4>
                                 <p>BJM mempunyai beberapa layanan Sosial Media yang bisa Anda kunjungi</p>
                                 <div class="social-links mt-3">
-                                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>Instagram
-                                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>Facebook
-                                    <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>Whatsapp
+                                    <a target="_blank"href="https://wa.me/628507569129" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>Whatsapp
                                 </div>
                             </div>
 
@@ -134,10 +130,10 @@
 
                 <div class="container footer-bottom clearfix">
                     <div class="copyright">
-                        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+                        &copy; Copyright <strong><span>BJM Bengkel</span></strong>. All Rights Reserved
                     </div>
                     <div class="credits">
-                        Designed by <a href="">Kelompok 6 - TI 3E</a>
+                        Designed by Kelompok 6 - TI 3E
                     </div>
                 </div>
             </footer><!-- End Footer -->

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{$title ?? 'BJM '}}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,7 +19,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- App favicon -->
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <link href="home/assets/img/Logo BJM.png" rel="icon">
+    <link href="home/assets/img/Logo BJM.png" rel="apple-touch-icon">
 
         <!-- App css -->
         <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
