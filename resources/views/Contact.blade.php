@@ -30,7 +30,7 @@
         <!-- Template Main CSS File -->
         <link href="home/assets/css/style.css" rel="stylesheet">
     </head>
-
+{{--
     <body>
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top ">
@@ -49,8 +49,9 @@
                 </nav><!-- .navbar -->
 
             </div>
-        </header><!-- End Header -->
-
+        </header><!-- End Header --> --}}
+    <body>
+        @include('layoutlanding.header')
         <!-- ======= Contact Section ======= -->
                 <section id="contact" class="contact">
                     <div class="container" data-aos="fade-up">
