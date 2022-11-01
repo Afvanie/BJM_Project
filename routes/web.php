@@ -25,7 +25,9 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 
-Route::get('/', [DashboardController::class,'index'])->middleware('auth');
+Route::get('/', function () {
+    return view('welcome');
+});
 Route::resource('/datacustomer', DataCustomerController::class)->middleware('auth');
 Route::resource('/datapegawai', UserController::class)->middleware('auth');
 Route::resource('/datasparepart', DataSparepartController::class)->middleware('auth');
