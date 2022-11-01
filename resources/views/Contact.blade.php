@@ -10,8 +10,8 @@
         <meta content="" name="keywords">
 
         <!-- Favicons -->
-        <link href="assets/img/favicon.png" rel="icon">
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="home/assets/img/favicon.png" rel="icon">
+        <link href="home/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
         <link
@@ -19,16 +19,16 @@
             rel="stylesheet">
 
         <!-- Vendor CSS Files -->
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link href="home/assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="home/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="home/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="home/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="home/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="home/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+        <link href="home/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
         <!-- Template Main CSS File -->
-        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="home/assets/css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -43,7 +43,6 @@
                         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                         <li><a class="nav-link scrollto" href="#about">About</a></li>
                         <li><a class="nav-link scrollto" href="#services">Contact</a></li>
-
                         <li><a class="getstarted scrollto" href="#about">Log In</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
@@ -68,22 +67,22 @@
                             <div class="address">
                               <i class="bi bi-geo-alt"></i>
                               <h4>Lokasi:</h4>
-                              <p>Kota Sidoarjo</p>
+                              <p><a target = "_blank" href="https://goo.gl/maps/75T63qDFUe1XZoEp9">Jl. Raya Kesambi No.3, Dusun Pojok, Lajuk, Kec. Porong, Kabupaten Sidoarjo, Jawa Timur 61274</a></p>
                             </div>
 
                             <div class="email">
                               <i class="bi bi-envelope"></i>
                               <h4>Email:</h4>
-                              <p>BJMSidoarjo@gmail.com</p>
+                              <p><a href = "mailto:alphapramadhani@gmail.com?">BJMSidoarjo@gmail.com</p>
                             </div>
 
                             <div class="phone">
                               <i class="bi bi-phone"></i>
                               <h4>Telephon:</h4>
-                              <p>088123456</p>
+                              <p><a target= " _blank " href="https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda">088123456</a></p>
                             </div>
 
-                            <iframe src="https://goo.gl/maps/kg1RhJeXyBHtgUiQ7" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.459031940696!2d112.67046461477642!3d-7.52480609457274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7df2c41973f91%3A0x4a3239af14dfa6c2!2sBENGKEL%20MOBIL%20BJM%20PORONG!5e0!3m2!1sid!2sid!4v1667287859673!5m2!1sid!2sid"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
                           </div>
 
                         </div>
@@ -196,16 +195,16 @@
                     </div>
                 </footer><!-- End Footer -->
                 <!-- Vendor JS Files -->
-                <script src="assets/vendor/aos/aos.js"></script>
-                <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-                <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-                <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-                <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-                <script src="assets/vendor/php-email-form/validate.js"></script>
+                <script src="home/assets/vendor/aos/aos.js"></script>
+                <script src="home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="home/assets/vendor/glightbox/js/glightbox.min.js"></script>
+                <script src="home/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+                <script src="home/assets/vendor/swiper/swiper-bundle.min.js"></script>
+                <script src="home/assets/vendor/waypoints/noframework.waypoints.js"></script>
+                <script src="home/assets/vendor/php-email-form/validate.js"></script>
 
                 <!-- Template Main JS File -->
-                <script src="assets/js/main.js"></script>
+                <script src="home/assets/js/main.js"></script>
 
     </body>
 
