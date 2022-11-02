@@ -79,8 +79,8 @@
 
                             <div class="phone">
                               <i class="bi bi-phone"></i>
-                              <h4>Telephon:</h4>
-                              <p><a target= " _blank " href="https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda">088123456</a></p>
+                              <h4>Telepon:</h4>
+                              <p><a target= " _blank " href="https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda">085707569129</a></p>
                             </div>
 
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.459031940696!2d112.67046461477642!3d-7.52480609457274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7df2c41973f91%3A0x4a3239af14dfa6c2!2sBENGKEL%20MOBIL%20BJM%20PORONG!5e0!3m2!1sid!2sid!4v1667287859673!5m2!1sid!2sid"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -122,91 +122,85 @@
                     </div>
                   </section><!-- End Contact Section -->
                 </div>
-                <!-- ======= Footer ======= -->
-                <footer id="footer">
+               <!-- ======= Footer ======= -->
+            <footer id="footer">
 
-                    <div class="footer-newsletter">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6">
-                                    <h4>Bengkel Online Mobil</h4>
-                                    <p>Percayakan Dokter Mobil untuk atasi berbagai permasalahan mobil Anda, dari</p>
-                                    <p>perawatan AC mobil hingga memaksimalkan perfoma mobil</p>
-                                </div>
+                <div class="footer-newsletter">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <h4>Bengkel Online Mobil</h4>
+                                <p>Percayakan kepada mekanik kami untuk atasi berbagai permasalahan mobil Anda, dari</p>
+                                <p>perawatan AC mobil hingga memaksimalkan perfoma mobil</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="footer-top">
-                        <div class="container">
-                            <div class="row">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
 
-                                <div class="col-lg-3 col-md-6 footer-contact">
-                                    <h3>BJM</h3>
-                                    <p>Bengkel Mobil Sidoarjo <br>&copy; 2022 <strong><span>BJM</span></strong>. All Rights Reserved</p>
-                                </div>
-
-                                <div class="col-lg-2 col-md-6 footer-links">
-                                    <h4>Link</h4>
-                                    <ul>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Login</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Register</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 footer-links">
-                                    <h4>Layanan Kami</h4>
-                                    <ul>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Penyedia Service Panggilan</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Diagnosa Kerusakan Mobil</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Sistem Sewa</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Service Mobil</a></li>
-                                        {{-- <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li> --}}
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 footer-links">
-                                    <h4>IKUTI KAMI</h4>
-                                    <p>BJM mempunyai beberapa layanan Sosial Media yang bisa Anda kunjungi</p>
-                                    <div class="social-links mt-3">
-                                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>Instagram
-                                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>Facebook
-                                        <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>Whatsapp
-                                    </div>
-                                </div>
-
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h3>BJM</h3>
+                                <p>Bengkel Mobil Sidoarjo <br>&copy; 2022 <strong><span>BJM</span></strong>. All Rights Reserved</p>
                             </div>
+
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Link</h4>
+                                <ul>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="/AboutUs">About us</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="/Contact">Contact</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Login</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="register">Register</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Layanan Kami</h4>
+                                <ul>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Penyedia Service Panggilan</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Diagnosa Kerusakan Mobil</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Sistem Sewa</a></li>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="login">Service Mobil</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>IKUTI KAMI</h4>
+                                <p>BJM mempunyai beberapa layanan Sosial Media yang bisa Anda kunjungi</p>
+                                <div class="social-links mt-3">
+                                    <a target="_blank"href="https://wa.me/628507569129" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>Whatsapp
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                </div>
 
-                    <div class="container footer-bottom clearfix">
-                        <div class="copyright">
-                            &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
-                        </div>
-                        <div class="credits">
-                            <!-- All the links in the footer should remain intact. -->
-                            <!-- You can delete the links only if you purchased the pro version. -->
-                            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-                            Designed by <a href="">Kelompok 6 - TI 3E</a>
-                        </div>
+                <div class="container footer-bottom clearfix">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>BJM Bengkel</span></strong>. All Rights Reserved
                     </div>
-                </footer><!-- End Footer -->
-                <!-- Vendor JS Files -->
-                <script src="home/assets/vendor/aos/aos.js"></script>
-                <script src="home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <script src="home/assets/vendor/glightbox/js/glightbox.min.js"></script>
-                <script src="home/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-                <script src="home/assets/vendor/swiper/swiper-bundle.min.js"></script>
-                <script src="home/assets/vendor/waypoints/noframework.waypoints.js"></script>
-                <script src="home/assets/vendor/php-email-form/validate.js"></script>
+                    <div class="credits">
+                        Designed by Kelompok 6 - TI 3E
+                    </div>
+                </div>
+            </footer><!-- End Footer -->
 
-                <!-- Template Main JS File -->
-                <script src="home/assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+            <script src="home/assets/vendor/aos/aos.js"></script>
+            <script src="home/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="home/assets/vendor/glightbox/js/glightbox.min.js"></script>
+            <script src="home/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+            <script src="home/assets/vendor/swiper/swiper-bundle.min.js"></script>
+            <script src="home/assets/vendor/waypoints/noframework.waypoints.js"></script>
+            <script src="home/assets/vendor/php-email-form/validate.js"></script>
 
-    </body>
+            <!-- Template Main JS File -->
+            <script src="home/assets/js/main.js"></script>
 
-    </html>
+</body>
+
+</html>
