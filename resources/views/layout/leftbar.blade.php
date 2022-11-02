@@ -47,7 +47,7 @@
                 </div> --}}
             </li>
 
-            <!-- <li class="side-nav-title side-nav-item">Data</li>
+            <li class="side-nav-title side-nav-item">Data</li>
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
@@ -67,7 +67,7 @@
                 </div>
             </li> -->
 
-            <!-- <li class="side-nav-item">
+            <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
                     <i class="uil-briefcase"></i>
                     <span>Data Sparepart </span>
@@ -102,7 +102,7 @@
                         </li>
                     </ul>
                 </div>
-            </li> -->
+            </li>
 
             <li class="side-nav-item">
                 <a href="/laporan" class="side-nav-link">
