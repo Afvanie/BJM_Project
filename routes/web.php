@@ -31,7 +31,6 @@ Route::get('/', function () {
 // Route::resource('/datacustomer', DataCustomerController::class)->middleware('auth', 'isAdmin');
 // Route::resource('/datapegawai', UserController::class)->middleware('auth');
 Route::resource('/datasparepart', DataSparepartController::class)->middleware('auth');
-Route::resource('/service', DataServiceController::class)->middleware('auth');
 Route::resource('/pembelian', DataPembelianController::class)->middleware('auth');
 Route::resource('/transaksi', DataTransaksiController::class)->middleware('auth');
 Route::get('/laporan', [LaporanController::class,'index'])->middleware('auth')->name('laporan');
@@ -42,6 +41,7 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datapegawai', UserController::class);
     Route::resource('/dashboard',DashboardController::class);
     Route::resource('/dataservice', DataServiceController::class);
+    Route::resource('/service', DataServiceController::class);
 });
 
 Auth::routes();
