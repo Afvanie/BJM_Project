@@ -74,7 +74,7 @@
 
               <div class="section-title">
                 <h2>Contact</h2>
-                <p>Bila anda kesulitan untuk datang ketempat kami silahkan hubungi nomor yang telah disediakan diform contact berikut</p>
+                <p>Anda dapat menghubungi/menemukan kami di: </p>
               </div>
 
               <div class="row">
@@ -90,7 +90,7 @@
                     <div class="email">
                       <i class="bi bi-envelope"></i>
                       <h4>Email:</h4>
-                      <p><a href = "mailto:alphapramadhani@gmail.com?">BJMSidoarjo@gmail.com</p>
+                      <p><a href = "mailto:BJMSidoarjo@gmail.com?">BJMSidoarjo@gmail.com</p>
                     </div>
 
                     <div class="phone">
