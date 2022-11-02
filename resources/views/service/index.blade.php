@@ -36,11 +36,11 @@
                   <tr>
                     <td>{{$loop -> iteration}}</td>
                     <td>{{$servicenya->nama}}</td>
-                    <td>{{$servicenya->biaya}}</td>
+                    <td><a>Rp. </a>{{$servicenya->biaya}}<a>,-</a></td>
                     <td>
                       <a class="btn btn-info" href="/service/{{$servicenya->id}}"><i class="bi bi-eye"></i></a>
                       <a class="btn btn-primary" href="/service/{{$servicenya->id}}/edit"><i class="bi bi-pencil-square"></i></a>
-                      <form action="/service/{{$servicenya->id}}" method="POST">@csrf
+                      <form action="/service/{{$servicenya->id}}" method="POST" class="d-inline">@csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button></form>
                     </td>
