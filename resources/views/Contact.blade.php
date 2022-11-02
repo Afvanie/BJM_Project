@@ -30,28 +30,46 @@
         <!-- Template Main CSS File -->
         <link href="home/assets/css/style.css" rel="stylesheet">
     </head>
-{{--
     <body>
-        <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top ">
-            <div class="container d-flex align-items-center">
+    <!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
 
-                <h1 class="logo me-auto"><a href="index.html">BJM</a></h1>
+        <h1 class="logo me-auto"><a href="/">BJM</a></h1>
 
-                <nav id="navbar" class="navbar">
-                    <ul>
-                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                        <li><a class="nav-link scrollto" href="#about">About</a></li>
-                        <li><a class="nav-link scrollto" href="#services">Contact</a></li>
-                        <li><a class="getstarted scrollto" href="#about">Log In</a></li>
-                    </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav><!-- .navbar -->
+        <nav id="navbar" class="navbar">
+            <ul>
+                {{-- untuk mengecek apakah sudah login atau belum/sesition --}}
+                @guest
+                <li><a class="nav-link scrollto" href="/">Home</a></li>
+                <li><a class="nav-link scrollto" href="/AboutUs">About</a></li>
+                <li><a class="nav-link scrollto active" href="/Contact">Contact</a></li>
+                <li><a class="getstarted scrollto" href="login">Log In</a></li>
+                @else 
+                <li><a class="nav-link scrollto" href="/">Home</a></li>
+                <li><a class="nav-link scrollto" href="/AboutUs">About</a></li>
+                <li><a class="nav-link scrollto active" href="/Contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="login">{{Auth::user()->nama}}</a></li>
+                <li>
+                    <a class="nav-link scrollto" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                                                                               document.getElementById('logout-form').submit();">
+                         Log Out    
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
+                @endguest
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
-            </div>
-        </header><!-- End Header --> --}}
-    <body>
-        @include('layoutlanding.header')
+    </div>
+</header><!-- End Header -->
+
+
+
         <!-- ======= Contact Section ======= -->
                 <section id="contact" class="contact">
                     <div class="container" data-aos="fade-up">
