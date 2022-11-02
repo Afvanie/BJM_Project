@@ -91,9 +91,9 @@
                 </a>
                 <div class="collapse" id="sidebarEmail">
                     <ul class="side-nav-second-level">
-                        <li>
+                        <!-- <li>
                             <a href="/transaksi">Data Transaksi</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="/service">Data Servis</a>
                         </li>

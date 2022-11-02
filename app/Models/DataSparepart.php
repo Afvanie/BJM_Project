@@ -16,7 +16,6 @@ class DataSparepart extends Model
         'image',
         'nama',
         'harga',
-
     ];
 
     public function getRouteKeyName()

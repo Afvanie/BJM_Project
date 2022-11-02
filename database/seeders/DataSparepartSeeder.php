@@ -19,6 +19,7 @@ class DataSparepartSeeder extends Seeder
                 'image' => '',
                 'nama' => 'LCD',
                 'harga' => 'Rp.100000',
+                'stok'=>'2'
 
 
             ],
@@ -26,11 +27,13 @@ class DataSparepartSeeder extends Seeder
                 'image' => '',
                 'nama' => 'Auto Radio',
                 'harga' => 'Rp.150000',
+                'stok'=>'2'
             ],
             [
                 'image' => '',
                 'nama' => 'Gear Box',
-                'harga' => 'Rp.80000'
+                'harga' => 'Rp.80000',
+                'stok'=>'2'
             ],
             ]);
     }

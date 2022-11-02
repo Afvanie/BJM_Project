@@ -18,6 +18,7 @@ class CreateDataSparepartsTable extends Migration
             $table->string('image')->nullable();
             $table->string('nama');
             $table->string('harga');
+            $table->integer('stok');
             $table->timestamps();
         });
     }
