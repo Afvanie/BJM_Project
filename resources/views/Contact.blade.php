@@ -79,8 +79,8 @@
 
                             <div class="phone">
                               <i class="bi bi-phone"></i>
-                              <h4>Telephon:</h4>
-                              <p><a target= " _blank " href="https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda">088123456</a></p>
+                              <h4>Telepon:</h4>
+                              <p><a target= " _blank " href="https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda">085707569129</a></p>
                             </div>
 
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.459031940696!2d112.67046461477642!3d-7.52480609457274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7df2c41973f91%3A0x4a3239af14dfa6c2!2sBENGKEL%20MOBIL%20BJM%20PORONG!5e0!3m2!1sid!2sid!4v1667287859673!5m2!1sid!2sid"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
