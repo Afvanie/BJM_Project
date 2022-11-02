@@ -30,7 +30,7 @@ Route::get('/', function () {
 });
 // Route::resource('/datacustomer', DataCustomerController::class)->middleware('auth', 'isAdmin');
 // Route::resource('/datapegawai', UserController::class)->middleware('auth');
-// Route::resource('/datasparepart', DataSparepartController::class)->middleware('auth');
+Route::resource('/datasparepart', DataSparepartController::class)->middleware('auth');
 Route::resource('/service', DataServiceController::class)->middleware('auth');
 Route::resource('/pembelian', DataPembelianController::class)->middleware('auth');
 Route::resource('/transaksi', DataTransaksiController::class)->middleware('auth');

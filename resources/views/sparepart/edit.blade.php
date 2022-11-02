@@ -36,16 +36,7 @@
                         <input type="text" name="harga" class="form-control" id="harga" value="{{$data_spareparts->harga}}"
                             aria-describedby="harga">
                     </div> 
-                  <div class="form-group">
-                        <label for="deskripsi">Diinput Oleh</label>
-                        <select class="form-select" name="user_id">
-                         @foreach ($users as $user)
 
-                         <option value="{{ $user->id }}" {{ $data_spareparts->user_id == $user->id ? 'selected' : '' }}>
-                         {{ $user->nama }} </option>
-                         @endforeach
-                         </select>
-                    </div> 
                     
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>

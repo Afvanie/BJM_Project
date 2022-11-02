@@ -29,7 +29,7 @@
                     <span> Dashboards </span>
                     
                 </a>
-                {{-- <div class="collapse" id="sidebarDashboards">
+                 <div class="collapse" id="sidebarDashboards">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="dashboard-analytics.html">Analytics</a>
@@ -44,7 +44,7 @@
                             <a href="dashboard-projects.html">Projects</a>
                         </li>
                     </ul>
-                </div> --}}
+                </div> 
             </li>
 
             <li class="side-nav-title side-nav-item">Data</li>
@@ -65,7 +65,7 @@
                         </li>
                     </ul>
                 </div>
-            </li> -->
+            </li> 
 
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarProjects" aria-expanded="false" aria-controls="sidebarProjects" class="side-nav-link">
