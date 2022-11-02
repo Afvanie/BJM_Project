@@ -6,7 +6,9 @@ use App\Models\DataCustomer;
 use App\Models\DataSparepart;
 use App\Models\DataKategori;
 use App\Models\User;
+use App\Models\DataService;
 use Illuminate\Http\Request;
+
 
 class DashboardController extends Controller
 {
@@ -15,6 +17,7 @@ class DashboardController extends Controller
             'jumlah_customer'=> DataCustomer::count(),
             'jumlah_pegawai' => User::count(),
             'jumlah_sparepart' => DataSparepart::count(),
+            'jumlah_servis' => DataService::count(),
         ]);
     }
 }

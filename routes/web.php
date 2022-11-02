@@ -40,10 +40,12 @@ Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('a
 Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datacustomer', DataCustomerController::class);
     Route::resource('/datapegawai', UserController::class);
+    Route::resource('/dashboard',DashboardController::class);
+    Route::resource('/dataservice', DataServiceController::class);
 });
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/AboutUs', [App\Http\Controllers\AboutUsController::class, 'index'])->name('AboutUs');
 Route::get('/Contact', [App\Http\Controllers\ContactController::class, 'index'])->name('Contact');
-
+// Route::get('/home',[\App\Http\Controllers\LandingController::class,'index'])->name('welcome')

@@ -23,9 +23,9 @@
         <ul class="side-nav">
 
             <li class="side-nav-item">
-                <a  href="/" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
-                    <br><i class="uil-home-alt" href="/"></i>
-                    <span class="badge bg-success float-end" href="/"></span>
+                <a  href="dashboard" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <br><i class="uil-home-alt" href="dashboard"></i>
+                    <span class="badge bg-success float-end" href="dashboard"></span>
                     <span> Dashboards </span>
                     
                 </a>
