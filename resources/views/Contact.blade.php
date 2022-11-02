@@ -74,7 +74,7 @@
 
               <div class="section-title">
                 <h2>Contact</h2>
-                <p>Bila anda kesulitan untuk datang ketempat kami silahkan hubungi nomor yang telah disediakan diform contact berikut</p>
+                <p>Anda dapat menghubungi/menemukan kami di: </p>
               </div>
 
               <div class="row">
