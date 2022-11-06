@@ -56,7 +56,7 @@ class UserController extends Controller
             }
             User::create($cek);
             return redirect('/datapegawai')
-            ->with('success', 'Pegawai Berhasil Ditambahkan'); 
+            ->with('success', 'Pegawai Berhasil Ditambahkan');
     }
 
     /**
@@ -68,6 +68,11 @@ class UserController extends Controller
     public function show($id)
     {
         //
+
+        $cek=User::where('id', $id)->first();
+        return view('pegawai.detail', [
+            'users' => $cek,
+        ]);
     }
 
     /**
