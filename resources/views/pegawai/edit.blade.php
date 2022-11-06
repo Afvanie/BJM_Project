@@ -21,7 +21,7 @@
                     enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-                    
+
                     <div class="form-group">
                         <label for="foto">Foto</label>
                         <input type="file" name="foto" class="form-control" id="foto" ariadescribedby="foto"
@@ -57,7 +57,7 @@
                         <input type="date" name="tanggal_join" class="form-control" id="tanggal_join" ariadescribedby="tanggal_join">
                     </div><br>
                     </div>
-                    
+
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

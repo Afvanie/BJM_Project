@@ -28,7 +28,7 @@
               </tr>
             </thead>
             <tbody>
-             
+
               @foreach ($users as $user)
               <tr>
               <td>{{$loop -> iteration}}</td>
@@ -38,6 +38,7 @@
               <td>{{$user->email}}</td>
               <td>{{$user->tanggal_join}}</td>
               <td>
+                <a class="btn btn-info" href="/datapegawai/{{$user->id}}"><i class="bi bi-eye"></i></a>
                 <a class="btn btn-primary" href="/datapegawai/{{$user->id}}/edit">Edit</a>
                 <form action="/datapegawai/{{$user->id}}" method="POST">@csrf
                   @method('DELETE')
