@@ -52,7 +52,7 @@ class UserController extends Controller
             ]);
             $cek['password']=Hash::make($request->password);
             if ($request->file('foto')) {
-                $cek['foto'] = $request->file('foto')->store('user', 'public');
+                $cek['foto'] = $request->file('foto')->store('users', 'public');
             }
             User::create($cek);
             return redirect('/datapegawai')
