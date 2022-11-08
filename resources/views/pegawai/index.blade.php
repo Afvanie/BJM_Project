@@ -40,7 +40,7 @@
               <td>
                 <a class="btn btn-info" href="/datapegawai/{{$user->id}}"><i class="bi bi-eye"></i></a>
                 <a class="btn btn-primary" href="/datapegawai/{{$user->id}}/edit">Edit</a>
-                <form action="/datapegawai/{{$user->id}}" method="POST">@csrf
+                <form action="/datapegawai/{{$user->id}}" method="POST" class="d-inline">@csrf
                   @method('DELETE')
                   <button type="submit" class="btn btn-danger">Delete</i></button></form>
               </td>

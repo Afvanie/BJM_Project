@@ -3,14 +3,12 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Dashboard Admin</title>
+        <title>Dashboard User</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
         <meta content="Coderthemes" name="author">
         <!-- App favicon -->
-        <link rel="shortcut icon" href="./assets/images/favicon.ico">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
+        <link rel="shortcut icon" href="/home/assets/img/Logo BJM.png">
         <!-- third party css -->
         <link href="/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
         <!-- third party css end -->
@@ -26,7 +24,7 @@
         <!-- Begin page -->
         <div class="wrapper">
             <!-- ========== Left Sidebar Start ========== -->
-            @include('layout.leftbar')
+            @include('layoutuser.leftbaruser')
             <!-- Left Sidebar End -->
 
             <!-- ============================================================== -->
@@ -36,7 +34,7 @@
             <div class="content-page">
                 <div class="content">
                     <!-- Topbar Start -->
-                    @include('layout.navbar')
+                    @include('layoutuser.navbar')
                     <!-- end Topbar -->
                     
                     <!-- Start Content-->
@@ -47,7 +45,7 @@
                 <!-- content -->
 
                 <!-- Footer Start -->
-                @include('layout.footer')
+                @include('layoutuser.footer')
                 <!-- end Footer -->
 
             </div>
@@ -61,7 +59,7 @@
         <!-- END wrapper -->
 
         <!-- Right Sidebar -->
-        @include('layout.rightbar');
+        @include('layoutuser.rightbar');
         <!-- /End-bar -->
 
 

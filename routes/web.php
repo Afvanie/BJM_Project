@@ -10,6 +10,8 @@ use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardUserController;
+use GuzzleHttp\Middleware;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 
@@ -30,11 +32,11 @@ Route::get('/', function () {
 });
 // Route::resource('/datacustomer', DataCustomerController::class)->middleware('auth', 'isAdmin');
 // Route::resource('/datapegawai', UserController::class)->middleware('auth');
-Route::resource('/datasparepart', DataSparepartController::class)->middleware('auth');
-Route::resource('/pembelian', DataPembelianController::class)->middleware('auth');
-Route::resource('/transaksi', DataTransaksiController::class)->middleware('auth');
-Route::get('/laporan', [LaporanController::class,'index'])->middleware('auth')->name('laporan');
-Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('auth');
+
+Route::get('/dashboarduser',[App\Http\Controllers\DashboardUserController::class,'index'])->middleware('auth')->name('indexuser');
+
+// Route::get('/laporan', [LaporanController::class,'index'])->middleware('auth')->name('laporan');
+// Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('auth');
 
 Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datacustomer', DataCustomerController::class);
@@ -42,10 +44,16 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/dashboard',DashboardController::class);
     Route::resource('/dataservice', DataServiceController::class);
     Route::resource('/service', DataServiceController::class);
+    Route::resource('/pembelian', DataPembelianController::class);
+    Route::resource('/datasparepart', DataSparepartController::class);
+    Route::resource('/transaksi', DataTransaksiController::class);
+    Route::get('/laporan', [LaporanController::class,'index']);
+Route::post('/laporan/cetak', [LaporanController::class,'cetak']);
 });
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/AboutUs', [App\Http\Controllers\AboutUsController::class, 'index'])->name('AboutUs');
 Route::get('/Contact', [App\Http\Controllers\ContactController::class, 'index'])->name('Contact');
+
 // Route::get('/home',[\App\Http\Controllers\LandingController::class,'index'])->name('welcome')

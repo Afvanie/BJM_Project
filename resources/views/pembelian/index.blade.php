@@ -40,7 +40,7 @@
                     <td>
                       <a class="btn btn-info" href="/pembelian/{{$pembeliannya->id}}"><i class="bi bi-eye"></i></a>
                       <a class="btn btn-primary" href="/pembelian/{{$pembeliannya->id}}/edit"><i class="bi bi-pencil-square"></i></a>
-                      <form action="/pembelian/{{$pembeliannya->id}}" method="POST">@csrf
+                      <form action="/pembelian/{{$pembeliannya->id}}" method="POST" class="d-inline">@csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button></form>
                     </td>

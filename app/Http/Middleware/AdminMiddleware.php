@@ -20,7 +20,7 @@ class AdminMiddleware
         if(Auth::user()-> level == 'Admin'){
             return $next($request);
         } else {
-            return redirect('/laporan');
+            return redirect('/dashboarduser');
         }
     }
 }
