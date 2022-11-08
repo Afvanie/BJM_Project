@@ -36,13 +36,7 @@
                   @foreach ($data_customers as $customer)
                   <tr>
                     <td>{{$loop -> iteration}}</td>
-                    <td><img src="
-                    @if($customer -> jeniskelamin == 'Perempuan')
-                      {{asset('image/student-female.png')}}
-                      @else 
-                      {{asset('image/student-male.png')}}
-                      @endif
-                      " alt="" width="50px"></td>
+                    <td><img src="{{ asset('storage/'.$customer ->image) }}" alt="" width="50px"></td>
                     <td class="text-capitalize">{{$customer->nama}}</td>
                     <td>{{$customer->alamat}}</td>
                     <td>{{$customer->notelp}}</td>
