@@ -47,6 +47,15 @@
                 </div> 
             </li>
 
+            <li class="side-nav-item">
+                <a  href="servispanggilan" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <br><i class="uil-home-alt" href="servispanggilan"></i>
+                    <span class="badge bg-success float-end" href="servispanggilan"></span>
+                    <span> Servis Panggilan</span>
+                    
+                </a>
+            </li>
+
             <li class="side-nav-title side-nav-item">List Data</li>
 
             <li class="side-nav-item">

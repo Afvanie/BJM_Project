@@ -9,6 +9,7 @@ use App\Http\Controllers\DataTransaksiController;
 use App\Http\Controllers\RincianBiayaController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ServisPanggilanController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardUserController;
@@ -38,6 +39,7 @@ Route::get('/dashboarduser',[App\Http\Controllers\DashboardUserController::class
 Route::resource('/rincianbiaya', RincianBiayaController::class);
 Route::resource('/datasparepart', DataSparepartController::class);
 Route::resource('/dataservice', DataServiceController::class);
+Route::resource('/servispanggilan', ServisPanggilanController::class);
 // Route::get('/laporan', [LaporanController::class,'index'])->middleware('auth')->name('laporan');
 // Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('auth');
 
