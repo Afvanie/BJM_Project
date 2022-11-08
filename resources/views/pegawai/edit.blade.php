@@ -20,6 +20,7 @@
                 <form method="post" action="/datapegawai/{{$users->id}}" id="myForm"
                     enctype="multipart/form-data">
                     @csrf
+                    
                     @method('PUT')
 
                     <div class="form-group">

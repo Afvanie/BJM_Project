@@ -7,6 +7,7 @@
                 Detail Pegawai
             </div>
             <div class="card-body">
+                
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><b>Id: </b>{{$users->id}}</li>
                     <li class="list-group-item"><b>Foto: </b><img src="{{ asset('storage/'.$users ->foto) }}" alt="" height="150px" width="150px" class="rounded"style="object-fit: cover"></li>

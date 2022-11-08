@@ -30,6 +30,7 @@
             <tbody>
 
               @foreach ($users as $user)
+
               <tr>
               <td>{{$loop -> iteration}}</td>
               <td><img src="{{ asset('storage/'.$user -> foto) }}" alt="" height="50px" width="50px" class="rounded"
@@ -45,6 +46,7 @@
                   <button type="submit" class="btn btn-danger">Delete</i></button></form>
               </td>
               </tr>
+              
               @endforeach
             </tbody>
           </table>
