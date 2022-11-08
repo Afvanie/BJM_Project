@@ -57,15 +57,15 @@
                 </a>
                 <div class="collapse" id="sidebarEmail">
                     <ul class="side-nav-second-level">
-                        <!-- <li>
-                            <a href="/transaksi">Data Transaksi</a>
-                        </li> -->
                         <li>
+                            <a href="/rincianbiaya">Rincian Biaya</a>
+                        </li>
+                        <!-- <li>
                             <a href="/service">Data Servis</a>
                         </li>
                         <li>
                             <a href="/pembelian">Data Pembelian</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </li>
