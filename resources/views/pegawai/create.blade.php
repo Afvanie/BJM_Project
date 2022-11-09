@@ -39,7 +39,7 @@
                     <div class="form-group">
                         <label for="level">Level</label>
                         <select class="form-select" aria-label="Default select example" name="level">
-                            <option selected value="pegawai">pegawai</option>
+                            <option selected value="pegawai">user</option>
                             <option value="admin">admin</option>
                           </select>
                     </div>

@@ -34,7 +34,7 @@
                   
                   @foreach ($service as $servicenya)
                   <tr>
-                    <td>{{$loop -> iteration}}</td>
+                    <td>{{$servicenya ->id}}</td>
                     <td>{{$servicenya->nama}}</td>
                     <td><a>Rp. </a>{{$servicenya->biaya}}<a>,-</a></td>
                     <td>
