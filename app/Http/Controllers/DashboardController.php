@@ -14,8 +14,8 @@ class DashboardController extends Controller
 {
     public function index(){
         return view('index',[
-            'jumlah_customer'=> DataCustomer::count(),
-            'jumlah_pegawai' => User::count(),
+            'jumlah_customer'=> User::where('level', 'user') ->count(),
+            'jumlah_pegawai' => User::where('level', 'Admin') ->count(),
             'jumlah_sparepart' => DataSparepart::count(),
             'jumlah_servis' => DataService::count(),
         ]);
