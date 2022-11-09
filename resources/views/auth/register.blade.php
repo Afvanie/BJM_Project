@@ -107,7 +107,6 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-              2022 © - Afvanie - Ridho
-        </footer>
+              2022 © - BJM Bengkel
     </div>
 @endsection

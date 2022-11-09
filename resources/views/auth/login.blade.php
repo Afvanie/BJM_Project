@@ -28,7 +28,7 @@
 
                             <div class="text-center w-75 m-auto">
                                 <h4 class="text-dark-50 text-center pb-0 fw-bold">Masuk</h4>
-                                <p class="text-muted mb-4">Masukkan email dan password untuk mengakses admin panel.
+                                <p class="text-muted mb-4">Masukkan email dan password untuk halaman dashboard.
                                 </p>
                             </div>
 
