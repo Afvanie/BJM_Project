@@ -10,7 +10,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><b>Id Service        : </b>{{$service->id}}</li>
                     <li class="list-group-item"><b>Nama Service : </b>{{$service->nama}}</li>
-                    <li class="list-group-item"><b>Biaya : </b>{{$service->harga}}</li>
+                    <li class="list-group-item"><b>Biaya : </b>{{$service->biaya}}</li>
                 </ul>
             </div>
             <a class="btn btn-success mt-3" href="/service">Kembali</a>

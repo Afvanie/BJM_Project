@@ -110,7 +110,7 @@
               </div>
             </div> -->
             <!-- Approach -->
-      <div class="card shadow mb-4">
+      <div class="card shadow mb-2">
           <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Welcome Message !!</h6>
           </div>
@@ -118,6 +118,40 @@
                     <p>Selamat Datang <b class="text-uppercase ">{{ Auth::user()->nama }}, </b></p>
               </div>
           </div>
+          <div class="card-header py-2">
+            <p class="mb-4">Berikut merupakan List Harga Service BJM Service Mobil</p>
+        </div>
       </div>
+
+
+      
+      <div class="card shadow mb-3">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="">
+              <thead>
+                <tr>
+                  <th>Nomor</th>
+                  <th>Nama</th>
+                  <th>Biaya</th>
+                  
+
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($service as $servicenya)
+                <tr>
+                  <td>{{$loop -> iteration}}</td>
+                  <td>{{$servicenya->nama}}</td>
+                  <td><a>Rp. </a>{{$servicenya->biaya}}<a>,-</a></td>
+                </tr>
+                @endforeach
+              </tbody>
+            </table>
+            {!!@$service->links()!!}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 @endsection

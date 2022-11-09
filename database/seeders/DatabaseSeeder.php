@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,            
             //DataKategoriSeeder::class,
             DataSparepartSeeder::class,
-            
+            DataServiceSeeder::class
         ]);
 
     }
