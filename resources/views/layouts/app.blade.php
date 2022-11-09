@@ -19,8 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- App favicon -->
-    <link href="home/assets/img/Logo BJM.png" rel="icon">
-    <link href="home/assets/img/Logo BJM.png" rel="apple-touch-icon">
+    <link rel="shortcut icon" href="/home/assets/img/Logo BJM.png">
 
         <!-- App css -->
         <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
