@@ -7,6 +7,7 @@ use App\Http\Controllers\DataServiceController;
 use App\Http\Controllers\DataPembelianController;
 use App\Http\Controllers\DataTransaksiController;
 use App\Http\Controllers\RincianBiayaController;
+use App\Http\Controllers\DataServisPanggilanController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ServisPanggilanController;
@@ -40,6 +41,7 @@ Route::resource('/rincianbiaya', RincianBiayaController::class);
 Route::resource('/datasparepart', DataSparepartController::class);
 Route::resource('/dataservice', DataServiceController::class);
 Route::resource('/servispanggilan', ServisPanggilanController::class);
+Route::resource('/dataservispanggilan', DataServisPanggilanController::class);
 // Route::get('/laporan', [LaporanController::class,'index'])->middleware('auth')->name('laporan');
 // Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('auth');
 
@@ -53,6 +55,7 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datasparepart', DataSparepartController::class);
     Route::get('/laporan', [LaporanController::class,'index']);
 Route::post('/laporan/cetak', [LaporanController::class,'cetak']);
+
 });
 
 Auth::routes();

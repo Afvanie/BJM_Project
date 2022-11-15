@@ -3,7 +3,7 @@
     <!-- LOGO -->
     <a href="/" class="logo text-center logo-light">
         <span class="logo-lg">
-            <img src="/assets/images/logobaru.jpeg" alt="" style="width: 200px; height: 60px;">
+            <img src="/home/assets/img/Logo BJM.png" alt="" style="width: 200px; height: 60px;">
         </span>
     </a>
 
@@ -45,6 +45,15 @@
                         </li>
                     </ul>
                 </div> 
+            </li>
+
+            <li class="side-nav-item">
+                <a  href="dataservispanggilan" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <br><i class="uil-home-alt" href="dataservispanggilan"></i>
+                    <span class="badge bg-success float-end" href="dataservispanggilan"></span>
+                    <span> Data Servis Panggilan </span>
+                    
+                </a>
             </li>
 
             <li class="side-nav-title side-nav-item">Data</li>

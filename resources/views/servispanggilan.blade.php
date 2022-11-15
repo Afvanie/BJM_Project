@@ -29,7 +29,7 @@
                     </div>  
                     <br>  
                                       
-                    <a target= " _blank " href="https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda" class="btn btn-primary">Pesan</a>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                     </br>
                 </form>
             </div>

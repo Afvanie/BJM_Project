@@ -54,7 +54,7 @@ class ServisPanggilanController extends Controller
 
             ServisPanggilan::create($cek);
 
-            return redirect('servispanggilan')
+            return redirect('https://api.whatsapp.com/send?phone=6285707569129&text=Saya%20ingin%20menyervis%20mobil%20saya%20di%20bengkel%20anda')
             ->with('success', ' '); 
     }
 
