@@ -26,7 +26,14 @@
                     <th>Id Rincian</th>
                     <th>Service</th>
                     <th>Sparepart</th>
+<<<<<<< HEAD
                     <th>Biaya</th>
+=======
+                    <th>Biaya Service</th>
+                    <th>Harga Sparepart</th>
+                    <th>Total Biaya</th>
+                    <th>Action</th>
+>>>>>>> eee489fb0c3b02c083bec37cd50b58e2f9961262
 
                   </tr>
                 </thead>
@@ -37,7 +44,20 @@
                     <td>{{$loop -> iteration}}</td>
                     <td>{{$rinciannya->service->nama}}</td>
                     <td>{{$rinciannya->sparepart->nama}}</td>
+                    <td>{{$rinciannya->biayaService}}</td>
+                    <td>{{$rinciannya->hargaSparepart}}</td>
                     <td>{{$rinciannya->biaya}}</td>
+<<<<<<< HEAD
+=======
+
+                    <td>
+                      <a class="btn btn-info" href="/rincianbiaya/{{$rinciannya->id}}"><i class="bi bi-eye"></i></a>
+                      <a class="btn btn-primary" href="/rincianbiaya/{{$rinciannya->id}}/edit"><i class="bi bi-pencil-square"></i></a>
+                      <form action="/rincianbiaya/{{$rinciannya->id}}" method="POST" class="d-inline">@csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button></form>
+                    </td>
+>>>>>>> eee489fb0c3b02c083bec37cd50b58e2f9961262
                   </tr>
                   @endforeach
                 </tbody>
