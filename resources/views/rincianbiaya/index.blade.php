@@ -26,7 +26,6 @@
                     <th>Id Rincian</th>
                     <th>Service</th>
                     <th>Sparepart</th>
-                    <th>Biaya</th>
                     <th>Biaya Service</th>
                     <th>Harga Sparepart</th>
                     <th>Total Biaya</th>
@@ -50,7 +49,6 @@
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button></form>
                     </td>
->>>>>>> eee489fb0c3b02c083bec37cd50b58e2f9961262
                   </tr>
                   @endforeach
                 </tbody>
