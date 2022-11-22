@@ -17,6 +17,7 @@ use App\Http\Controllers\GejalaController;
 use App\Http\Controllers\IndikatorbobotController;
 use App\Http\Controllers\PenyakitController;
 use App\Http\Controllers\RulediagnosaController;
+use App\Http\Controllers\LaporanUserController;
 use App\Models\rulediagnosa;
 use GuzzleHttp\Middleware;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -45,8 +46,8 @@ Route::resource('/rincianbiaya', RincianBiayaController::class);
 Route::resource('/datasparepart', DataSparepartController::class);
 Route::resource('/dataservice', DataServiceController::class);
 Route::resource('/servispanggilan', ServisPanggilanController::class);
-// Route::get('/laporan', [LaporanController::class,'index'])->middleware('auth')->name('laporan');
-// Route::post('/laporan/cetak', [LaporanController::class,'cetak'])->middleware('auth');
+Route::get('/laporanUser', [LaporanUserController::class,'index'])->middleware('auth')->name('laporanUser');
+Route::post('/laporanUser/cetak', [LaporanUserController::class,'cetak'])->middleware('auth');
 
 Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datacustomer', DataCustomerController::class);

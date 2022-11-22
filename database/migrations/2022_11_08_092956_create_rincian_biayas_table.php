@@ -22,6 +22,8 @@ class CreateRincianBiayasTable extends Migration
             $table->unsignedBigInteger('sparepart_id');
             $table->foreign('sparepart_id')->references('id')->on('data_spareparts');
             $table->integer('biaya')->nullable();
+            $table->integer('biayaService')->nullable();
+            $table->integer('hargaSparepart')->nullable();
             $table->timestamps();
         });
     }
