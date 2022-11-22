@@ -57,6 +57,8 @@ class RincianBiayaController extends Controller
                 'service_id' => $request->service_id,
                 'sparepart_id' => $request->sparepart_id,
                 'biaya' => @(int)$DataSparepart->harga+@(int)$DataService->biaya,
+                'hargaSparepart' => (int)$DataSparepart->harga,
+                'biayaService' => (int)$DataService->biaya,
             ];
             RincianBiaya::create($data);
 
@@ -118,6 +120,8 @@ class RincianBiayaController extends Controller
                 'service_id' => $request->service_id,
                 'sparepart_id' => $request->sparepart_id,
                 'biaya' => (int)$DataSparepart->harga+(int)$DataService->biaya,
+                'hargaSparepart' => (int)$DataSparepart->harga,
+                'biayaService' => (int)$DataService->biaya,
             ];
 
         RincianBiaya::where('id', $id)->update($data);

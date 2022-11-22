@@ -31,18 +31,7 @@
                 </a>
                  <div class="collapse" id="sidebarDashboards">
                     <ul class="side-nav-second-level">
-                        <li>
-                            <a href="dashboard-analytics.html">Analytics</a>
-                        </li>
-                        <li>
-                            <a href="dashboard-crm.html">CRM</a>
-                        </li>
-                        <li>
-                            <a href="index.html">Ecommerce</a>
-                        </li>
-                        <li>
-                            <a href="dashboard-projects.html">Projects</a>
-                        </li>
+  
                     </ul>
                 </div> 
             </li>
@@ -77,6 +66,13 @@
                         </li> -->
                     </ul>
                 </div>
+            </li>
+
+            <li class="side-nav-item">
+                <a href="/laporanUser" class="side-nav-link">
+                    <i class="uil-folder-plus"></i>
+                    <span> Laporan </span>
+                </a>
             </li>
 
         <!-- End Sidebar -->

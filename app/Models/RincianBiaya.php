@@ -16,7 +16,9 @@ class RincianBiaya extends Model
         // 'customer_id',
         'service_id',
         'sparepart_id',
-        'biaya'
+        'biaya',
+        'biayaService',
+        'hargaSparepart',
 
     ];
 
