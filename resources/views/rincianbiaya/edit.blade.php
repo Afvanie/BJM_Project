@@ -17,7 +17,7 @@
                     </ul>
                 </div>
                 @endif
-                <form method="post" action="/rincianbiaya/{{$rincianbiaya->id}}" id="myForm"
+                <form method="POST" action="/rincianbiaya/{{$rincianbiaya->id}}" id="myForm"
                     enctype="multipart/form-data">
                     @csrf
                     @method('PUT') 
