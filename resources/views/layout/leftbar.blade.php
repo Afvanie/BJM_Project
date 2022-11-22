@@ -91,14 +91,38 @@
                 </a>
                 <div class="collapse" id="sidebarEmail">
                     <ul class="side-nav-second-level">
-                        <!-- <li>
-                            <a href="/transaksi">Data Transaksi</a>
-                        </li> -->
+
                         <li>
                             <a href="/service">Data Servis</a>
                         </li>
                         <li>
                             <a href="/pembelian">Data Pembelian</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="side-nav-title side-nav-item">Data Diagnosa</li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidediagnosa" aria-expanded="false" aria-controls="sidediagnosa" class="side-nav-link">
+                    <i class="uil-envelope"></i>
+                    <span> Data Diagnosa </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidediagnosa">
+                    <ul class="side-nav-second-level">
+                        
+                        <li>
+                            <a href="/datapenyakit">Data Penyakit</a>
+                        </li>
+                        <li>
+                            <a href="/datagejala">Data Gejala</a>
+                        </li>
+                        <li>
+                            <a href="/indikatorbobot">Indikator Bobot</a>
+                        </li>
+                        <li>
+                            <a href="/rulediagnosa">Rule Diagnosa</a>
                         </li>
                     </ul>
                 </div>

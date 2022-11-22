@@ -16,27 +16,18 @@
                     </ul>
                 </div>
                 @endif
-                <form method="post" action="/gejala" id="myForm" enctype="multipart/form-data">
+                <form method="post" action="/datagejala" id="myForm" enctype="multipart/form-data">
                     @csrf
-                    
-                    <div style="margin-top:8px;">
-                        <label>Kode Gejala</label>
-                        <input type="text" class="w3-input w3-border w3-small" required name="kd_gejala"
-                            value="" size="32">
+                    <div class="form-group">
+                        <label for="kd_gejala">Kode Gejala</label>
+                        <input type="text" name="kd_gejala" class="form-control" id="kd_gejala" aria-describedby="kd_gejala">
                     </div>
-
-                    <div style="margin-top:8px;">
-                        <label>Gejala</label>
-                        <input type="text" class="w3-input w3-border w3-small" required name="gejala"
-                            value="" size="32">
-                    </div>
+                    <div class="form-group">
+                        <label for="gejala">Gejala</label>
+                        <input type="text" name="gejala" class="form-control" id="gejala" aria-describedby="gejala">
+                    </div>  
                     <br>                    
-                    <div class="w3-center">
-                        <a onClick="window.history.back()" style="cursor:pointer"
-                            class="w3-btn w3-small w3-red"><i class="fa fa-times-rectangle fa-fw"></i>
-                            Batal</a> <button type="submit" class="w3-btn w3-small w3-green"><i
-                                class="fa fa-save fa-fw"></i> Simpan</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>

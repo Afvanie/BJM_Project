@@ -16,4 +16,8 @@ class gejala extends Model
         'kd_gejala',
         'gejala'
     ];
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

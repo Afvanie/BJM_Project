@@ -47,7 +47,7 @@ class GejalaController extends Controller
 
             ]);
             gejala::create($cek);
-            return redirect('/gejala')
+            return redirect('/datagejala')
             ->with('success', 'Gejala berhasil ditambahkan'); 
     }
 
@@ -57,10 +57,10 @@ class GejalaController extends Controller
      * @param  \App\Models\gejala  $gejala
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($kd_gejala)
     {
         //
-        $cek=gejala::where('id', $id)->first();
+        $cek=gejala::where('id', $kd_gejala)->first();
         return view('gejala.detail', [
             'gejalas' => $cek,
         ]);
@@ -102,7 +102,7 @@ class GejalaController extends Controller
         gejala::where('id', $id)->update($validatedata);
 
 
-        return redirect('/gejala')->with('toast_success', 'Gejala berhasil di edit!');
+        return redirect('/datagejala')->with('toast_success', 'Gejala berhasil di edit!');
     }
 
     /**
@@ -111,10 +111,9 @@ class GejalaController extends Controller
      * @param  \App\Models\gejala  $gejala
      * @return \Illuminate\Http\Response
      */
-    public function destroy(gejala $id)
+    public function destroy($id)
     {
-        //
         gejala::destroy($id);
-        return redirect('/gejala')->with('toast_success', 'Gejala berhasil di hapus!');
+        return redirect('/datagejala')->with('toast_success', 'Gejala berhasil di hapus!');
     }
 }
