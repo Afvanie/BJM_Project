@@ -15,7 +15,10 @@ class rulediagnosa extends Model
         'id',
         'penyakits_id',
         'gejalas_id',
-        'indikatorbobots_id'
+        'indikatorbobots_id',
+        'kd_penyakit',
+        'nilai_bobot',
+        'kd_gejala'
     ];
     public function penyakit()
     {

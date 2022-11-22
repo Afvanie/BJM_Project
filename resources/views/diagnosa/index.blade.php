@@ -17,7 +17,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
-              <a href="/rulediagnosa/create" class="btn mb-3 btn-primary btn-icon-split btn-sm">Tambah Rule Diganosa</a>
+              <a href="/diagnosa/create" class="btn mb-3 btn-primary btn-icon-split btn-sm">Tambah Rule Diganosa</a>
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
@@ -33,10 +33,10 @@
                   
                   @foreach ($rulediagnosas as $diagnosa)
                   <tr>
-                    <td>{{$diganosa ->id}}</td>
-                    <td>{{$diganosa->penyakits->kd_penyakit}} <p> | </p> {{$diganosa->penyakits->penyakit}}</td>
-                    <td>{{$diganosa->indikatorbobots->nilai_bobot}}</td>
-                    <td>{{$diagnosa->gejalas->kd_gejala}} <p> | </p> {{$diganosa->gejalas->gejala}} </td>
+                    <td>{{$diagnosa ->id}}</td>
+                    <td>{{$diagnosa->penyakit->kd_penyakit}} <p> -- </p> {{$diagnosa->penyakit->penyakit}}</td>
+                    <td>{{$diagnosa->indikatorbobot->nilai_bobot}}</td>
+                    <td>{{$diagnosa->gejala->kd_gejala}} <p> -- </p> {{$diagnosa->gejala->gejala}} </td>
                   </tr>
                   @endforeach
                 </tbody>

@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 @endif
-                <form method="post" action="/rulediganosa" id="myForm" enctype="multipart/form-data">
+                <form method="post" action="/rulediagnosa" id="myForm" enctype="multipart/form-data">
                     @csrf
 
                     <div class="form-group">

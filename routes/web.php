@@ -61,6 +61,7 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datapenyakit',PenyakitController::class);
     Route::resource('/indikatorbobot',IndikatorbobotController::class);
     Route::resource('/rulediagnosa',RulediagnosaController::class);
+    Route::resource('/diagnosa',RulediagnosaController::class);
     Route::get('/laporan', [LaporanController::class,'index']);
 
 Route::post('/laporan/cetak', [LaporanController::class,'cetak']);

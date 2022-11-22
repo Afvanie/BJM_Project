@@ -21,6 +21,7 @@ class CreateRulediagnosasTable extends Migration
             $table->foreign('gejalas_id')->references('id')->on('gejalas');
             $table->unsignedBigInteger('indikatorbobots_id');
             $table->foreign('indikatorbobots_id')->references('id')->on('indikatorbobots');
+            $table->ipAddress('kd_penyakit')->nullable();
             $table->timestamps();
         });
     }
