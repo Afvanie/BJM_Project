@@ -13,6 +13,8 @@ use App\Http\Controllers\ServisPanggilanController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\GejalaController;
+use App\Http\Controllers\PenyakitController;
 use GuzzleHttp\Middleware;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -51,6 +53,8 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/service', DataServiceController::class);
     Route::resource('/pembelian', DataPembelianController::class);
     Route::resource('/datasparepart', DataSparepartController::class);
+    Route::resource('/datagejala',GejalaController::class);
+    Route::resource('/datapenyakit',PenyakitController::class);
     Route::get('/laporan', [LaporanController::class,'index']);
 Route::post('/laporan/cetak', [LaporanController::class,'cetak']);
 });
