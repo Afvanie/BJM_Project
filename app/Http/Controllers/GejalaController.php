@@ -57,10 +57,10 @@ class GejalaController extends Controller
      * @param  \App\Models\gejala  $gejala
      * @return \Illuminate\Http\Response
      */
-    public function show($kd_gejala)
+    public function show($id)
     {
         //
-        $cek=gejala::where('id', $kd_gejala)->first();
+        $cek=gejala::where('id', $id)->first();
         return view('gejala.detail', [
             'gejalas' => $cek,
         ]);

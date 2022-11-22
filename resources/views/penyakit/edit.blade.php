@@ -34,14 +34,14 @@
                         <div class="form-group">
                             <label for="harga">Definisi Kerusakan</label>
                             <input type="text" name="definisi" class="form-control" id="definisi"
-                                value="{{ $definisis->definisi }}" aria-describedby="definisi">
+                                value="{{ $penyakits->definisi }}" aria-describedby="definisi">
                         </div>
                         <div class="form-group">
                             <label for="harga">Solusi</label>
                             <input type="text" name="solusi" class="form-control" id="solusi"
                                 value="{{ $penyakits->solusi }}" aria-describedby="solusi">
                         </div>
-
+                        <br>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

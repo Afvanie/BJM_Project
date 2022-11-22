@@ -58,10 +58,10 @@ class PenyakitController extends Controller
      * @param  \App\Models\penyakit  $penyakit
      * @return \Illuminate\Http\Response
      */
-    public function show(penyakit $kd_penyakit)
+    public function show($id)
     {
         //
-        $cek=penyakit::where('id', $kd_penyakit)->first();
+        $cek=penyakit::where('id', $id)->first();
         return view('penyakit.detail', [
             'penyakits' => $cek,
         ]);
@@ -73,7 +73,7 @@ class PenyakitController extends Controller
      * @param  \App\Models\penyakit  $penyakit
      * @return \Illuminate\Http\Response
      */
-    public function edit(penyakit $id)
+    public function edit($id)
     {
         //
         $cek=penyakit::where('id', $id)->first();
@@ -114,7 +114,7 @@ class PenyakitController extends Controller
      * @param  \App\Models\penyakit  $penyakit
      * @return \Illuminate\Http\Response
      */
-    public function destroy(penyakit $id)
+    public function destroy($id)
     {
         //
         penyakit::destroy($id);

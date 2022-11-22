@@ -19,8 +19,5 @@ class penyakit extends Model
         'solusi'
     ];
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+    
 }
