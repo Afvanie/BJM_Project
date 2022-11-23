@@ -19,7 +19,7 @@ class LaporanUserController extends Controller
             $rincianbiaya = RincianBiaya::all();
 
             $pdf = PDF::loadview('laporanUser.rincianbiaya',['rincianbiaya'=>$rincianbiaya]);
-            return $pdf->stream('laporan-rincianbiaya.pdf');
+            return $pdf->download('laporan-rincianbiaya.pdf');
         }
         else {
             $transaksi = DataTransaksi::all();
