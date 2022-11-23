@@ -22,7 +22,7 @@
                         <label for="tipe">Tipe laporan</label>
                         <select name="tipe" class="form-control" id="tipe">
                             <option value="pembelian">Pembelian</option>
-                            <option value="transaksi">Transaksi</option>
+                            <option value="servispanggilan">Service Panggilan</option>
                         </select>
                     </div>
                     <br>                    
