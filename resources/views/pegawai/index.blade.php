@@ -23,6 +23,7 @@
                 <th>Foto</th>
                 <th>Nama Pegawai</th>
                 <th>Email</th>
+                <th>Level</th>
                 <th>Bergabung Pada</th>
                 <th>Action</th>
               </tr>
@@ -37,6 +38,7 @@
                 style="object-fit: cover"></td>
               <td class="text-capitalize">{{$user->nama}}</td>
               <td>{{$user->email}}</td>
+              <td>{{$user->level}}</td>
               <td>{{$user->tanggal_join}}</td>
               <td>
                 <a class="btn btn-info" href="/datapegawai/{{$user->id}}"><i class="bi bi-eye"></i></a>
