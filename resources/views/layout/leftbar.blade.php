@@ -2,8 +2,8 @@
     
     <!-- LOGO -->
     <a href="/" class="logo text-center logo-light">
-        <span class="logo-lg">
-            <img src="/assets/images/logobaru.jpeg" alt="" style="width: 200px; height: 60px;">
+        <span class="logo-lg">  
+            <img src="/home/assets/img/Logo BJM.png" alt="" style="width: 200px; height: 60px;">
         </span>
     </a>
 
@@ -58,10 +58,7 @@
                 <div class="collapse" id="sidebarEcommerce">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="/datacustomer">Data Customer</a>
-                        </li>
-                        <li>
-                            <a href="/datapegawai">Data Pegawai</a>
+                            <a href="/datapegawai">Data User</a>
                         </li>
                     </ul>
                 </div>
@@ -123,6 +120,9 @@
                         </li>
                         <li>
                             <a href="/rulediagnosa">Rule Diagnosa</a>
+                        </li>
+                        <li>
+                            <a href="https://bjmdiagnosa.000webhostapp.com/admin/home.php">Data Diagnosa</a>
                         </li>
                     </ul>
                 </div>

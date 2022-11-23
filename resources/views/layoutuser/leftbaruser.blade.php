@@ -56,6 +56,15 @@
                 </a>
             </li>
 
+            <li class="side-nav-item">
+                <a  href="https://bjmdiagnosa.000webhostapp.com/diagnosa_create.php" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                    <br><i class="uil-home-alt" href="https://bjmdiagnosa.000webhostapp.com/diagnosa_create.php"></i>
+                    <span class="badge bg-success float-end" href="https://bjmdiagnosa.000webhostapp.com/diagnosa_create.php"></span>
+                    <span> Diagnosa Kerusakan</span>
+                    
+                </a>
+            </li>
+
             <li class="side-nav-title side-nav-item">List Data</li>
 
             <li class="side-nav-item">
