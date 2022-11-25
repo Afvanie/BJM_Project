@@ -78,6 +78,21 @@
                     </ul>
                 </div>
             </li>
+            <li class="side-nav-title side-nav-item">Service</li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebar" aria-expanded="false" aria-controls="sidebar" class="side-nav-link">
+                    <i class="uil-briefcase"></i>
+                    <span>Data Service </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebar">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="/service">Data Servis</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
 
             <li class="side-nav-title side-nav-item">Transaksi</li>
             <li class="side-nav-item">
@@ -89,9 +104,7 @@
                 <div class="collapse" id="sidebarEmail">
                     <ul class="side-nav-second-level">
 
-                        <li>
-                            <a href="/service">Data Servis</a>
-                        </li>
+
                         <li>
                             <a href="/pembelian">Data Pembelian</a>
                         </li>
@@ -122,7 +135,7 @@
                             <a href="/rulediagnosa">Rule Diagnosa</a>
                         </li>
                         <li>
-                            <a href="https://bjmdiagnosa.000webhostapp.com/admin/home.php">Data Diagnosa</a>
+                            <a href="http://localhost/bengkel_bjm/admin/home.php">Data Diagnosa</a>
                         </li>
                     </ul>
                 </div>
