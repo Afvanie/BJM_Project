@@ -17,7 +17,13 @@ class CreatePembelianTable extends Migration
             $table->id();
             $table->unsignedBigInteger('sparepart_id');
             $table->foreign('sparepart_id')->references('id')->on('data_spareparts');
+            $table->integer('hargaSparepart')->nullable();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->String('nama_user')->nullable();
+            $table->date('tanggal');
             $table->integer('jumlah')->nullable();
+            $table->integer('total_harga')->nullable();
             $table->timestamps();
         });
     }

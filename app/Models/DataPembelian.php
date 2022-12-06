@@ -13,14 +13,24 @@ class DataPembelian extends Model
 
     protected $fillable = [
         'id',
+        'user_id',
         'sparepart_id',
-        'jumlah'
+        'hargaSparepart',
+        'tanggal',
+        'jumlah',
+        'total_harga'
 
     ];
 
     public function sparepart()
     {
         return $this->hasOne(DataSparepart::class, 'id', 'sparepart_id');
+
+    }
+
+    public function user()
+    {
+        return $this->hasOne(User::class, 'id', 'user_id');
     }
 
     public function getRouteKeyName()

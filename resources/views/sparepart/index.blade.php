@@ -41,7 +41,7 @@
                     <td><img src="{{ asset('storage/'.$sparepart -> image) }}" alt="" height="90px" width="90px" class="rounded" style="object-fit: cover"></td>
                     <td>{{$sparepart->nama}}</td>
                     <td>{{$sparepart->stok}}</td>
-                    <td>{{$sparepart->harga}}</td>
+                    <td>Rp.{{$sparepart->harga}}</td>
                     <td>
                       <a class="btn btn-info" href="/datasparepart/{{$sparepart->id}}"><i class="bi bi-eye"></i></a>
                       <a class="btn btn-primary" href="/datasparepart/{{$sparepart->id}}/edit"><i class="bi bi-pencil-square"></i></a>

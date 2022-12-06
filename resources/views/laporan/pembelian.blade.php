@@ -19,8 +19,13 @@
 		<thead>
 			<tr>
 				<th>Id Pembelian</th>
+				<th>Nama Pegawai</th>
                 <th>Nama Sparepart</th>
+				<th>Harga Sparepart</th>
+				<th>tanggal</th>
                 <th>Jumlah Pembelian</th>
+				<th>Total</th>
+
 			</tr>
 		</thead>
 		<tbody>
@@ -29,6 +34,10 @@
                 <td>{{$loop -> iteration}}</td>
                 <td>{{$pembelian->sparepart->nama}}</td>
                 <td>{{$pembelian->jumlah}}</td>
+				<td>{{$pembelian->sparepart->harga}}</td>
+				<td>{{$pembelian->created_at->format('d/m/Y')}}</td>
+				<td>{{$pembelian->jumlah}}</td>
+				<td>{{$pembelian->total_harga}}</td>
 			</tr>
 			@endforeach
 		</tbody>

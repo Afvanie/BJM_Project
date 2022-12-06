@@ -48,6 +48,7 @@ Route::resource('/dataservice', DataServiceController::class);
 Route::resource('/servispanggilan', ServisPanggilanController::class);
 Route::get('/laporanUser', [LaporanUserController::class,'index'])->middleware('auth')->name('laporanUser');
 Route::post('/laporanUser/cetak', [LaporanUserController::class,'cetak'])->middleware('auth');
+// Route::get('/cetak-pembelian-form', [DataPembelianController::class])->name('cetak-pembelian-form');
 
 Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/datacustomer', DataCustomerController::class);
@@ -62,9 +63,9 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/indikatorbobot',IndikatorbobotController::class);
     Route::resource('/rulediagnosa',RulediagnosaController::class);
     Route::resource('/diagnosa',RulediagnosaController::class);
+    // Route::get('/laporan', [LaporanController::class,'index']);
     Route::get('/laporan', [LaporanController::class,'index']);
-
-Route::post('/laporan/cetak', [LaporanController::class,'cetak']);
+    Route::post('/laporan/cetak', [LaporanController::class,'cetak']);
 });
 
 Auth::routes();

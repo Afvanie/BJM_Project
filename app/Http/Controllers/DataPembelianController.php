@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\DataSparepart;
 use App\Models\DataPembelian;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use DB;
+use PDF; 
 
 class DataPembelianController extends Controller
 {
@@ -17,9 +19,15 @@ class DataPembelianController extends Controller
      */
     public function index()
     {
-        return view('pembelian.index',[
-            'pembelian'=> DataPembelian::paginate(4)
+
+        $tanggal = DataPembelian::all();
+        if (request('search')) {
+            $tanggal->where('tanggal', 'like', '%' . request('search') . '%');
+        }
+        return view('pembelian.index', [
+            'pembelian' => $tanggal,
         ]);
+        
     }
 
     /**
@@ -30,7 +38,7 @@ class DataPembelianController extends Controller
     public function create()
     {
         return view('pembelian.create',[
-            'pembelian'=> DataPembelian::all(), 'data_spareparts'=> DataSparepart::all()
+            'pembelian'=> DataPembelian::all(), 'data_spareparts'=> DataSparepart::all(),'users'=> User::all()  
         ]);
     }
 
@@ -42,17 +50,33 @@ class DataPembelianController extends Controller
      */
     public function store(Request $request)
     {
-        $cek=$request->validate([
+        $request->validate([
+            'user_id' => 'required',
             'sparepart_id' => 'required',
-            'jumlah' => 'required'
-
+            'jumlah' => 'required',
+            'tanggal' => 'required',
             ]);
-            DataPembelian::create($cek);
+            $DataSparepart = DataSparepart::find($request->sparepart_id);
+            
+            $data = [
+                // 'customer_id' => $request->customer_id,
+                'user_id' => 'required',
+                'sparepart_id' => 'required',
+                'jumlah' => $request->jumlah,
+                'tanggal' => $request->tanggal,
+                'user_id' => $request->user_id,
+                'sparepart_id' => $request->sparepart_id,
+                'hargaSparepart' => @(int)$DataSparepart->harga,
+                'total_harga'=> @(int)$DataSparepart->harga * @(int)$request->jumlah,
+            ];
+
+            DataPembelian::create($data);
             $DataSparepart = DataSparepart::find($request->sparepart_id);
             $stok = $DataSparepart->stok + $request->jumlah;
             DataSparepart::where('id', $request->sparepart_id)->update(['stok' => $stok]);
             return redirect('/pembelian')
             ->with('success', 'pembelian Berhasil Ditambahkan'); 
+            
     }
 
     /**
@@ -63,9 +87,9 @@ class DataPembelianController extends Controller
      */
     public function show($id)
     {
-        $cek=DataPembelian::where('id', $id)->first();
+        $data=DataPembelian::where('id', $id)->first();
         return view('pembelian.detail', [
-            'pembelian' => $cek, 'data_spareparts'=> DataSparepart::all()
+            'pembelian' => $data, 'data_spareparts'=> DataSparepart::all()
         ]);
     }
 
@@ -77,9 +101,9 @@ class DataPembelianController extends Controller
      */
     public function edit($id)
     {
-        $cek=DataPembelian::where('id', $id)->first();
+        $data=DataPembelian::where('id', $id)->first();
         return view('pembelian.edit', [
-            'pembelian' => $cek,  'data_spareparts'=> DataSparepart::all()
+            'pembelian' => $data,  'data_spareparts'=> DataSparepart::all()
         ]);
     }
 
@@ -93,8 +117,12 @@ class DataPembelianController extends Controller
     public function update(Request $request, $id)
     {
         $rules = [
+            'user_id' => 'required',
             'sparepart_id' => 'required',
-            'jumlah' => 'required'
+            'hargaSparepart' => 'required',
+            'tanggal' => 'required',
+            'jumlah' => 'required',
+            'total' => 'required',
  
         ];
 
@@ -130,4 +158,9 @@ class DataPembelianController extends Controller
         DataPembelian::destroy($id);
         return redirect('/pembelian')->with('toast_success', 'pembelian berhasil di hapus!');
     }
+
+
+    // public function cetakForm(){
+    //     return view('pembelian.cetak-pegawai-form');
+    // }
 }
