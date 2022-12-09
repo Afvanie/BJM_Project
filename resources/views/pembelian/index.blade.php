@@ -18,18 +18,30 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
+            
+              
             <form method="post" action="/laporan/cetak" id="myForm" enctype="multipart/form-data">                 
               
           </form>
-          <form action="/pembelian">
+            <form action="pembelian-filter" method="GET">
             <label for="nama">Seraching Data</label>
             <div class="input-group mb-3 w-25">
-                <input type="date" class="form-control" placeholder="tanggal" name="search"
-                    value="{{ request('search') }}" onchange="submit()">
+                <input type="date" class="form-control" placeholder="tanggal" name="tanggal"
+                    value="{{ $date ?? '' }}" onchange="submit()">
             </div>
         </form>
+        <div class="row">
+          <div class="col">
             <a href="/laporan" class="btn mb-3 btn-primary btn-icon-split btn-sm">Cetak Laporan</a>
               <a href="/pembelian/create" class="btn mb-3 btn-primary btn-icon-split btn-sm">Tambah Data Pembelian</a>
+          </div>
+          <div class="col">
+            <div style="float: right">
+              <a href="/pembelian" class="btn mb-3 btn-primary btn-icon-split btn-sm">Reset Filter</a>
+            </div>
+          </div>
+        </div>
+            
             <div class="table-responsive">
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>

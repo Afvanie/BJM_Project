@@ -57,6 +57,7 @@ Route::middleware(['isAdmin', 'auth'])->group(function(){
     Route::resource('/dataservice', DataServiceController::class);
     Route::resource('/service', DataServiceController::class);
     Route::resource('/pembelian', DataPembelianController::class);
+    Route::get('pembelian-filter',[DataPembelianController::class,'filter']);
     Route::resource('/datasparepart', DataSparepartController::class);
     Route::resource('/datagejala',GejalaController::class);
     Route::resource('/datapenyakit',PenyakitController::class);

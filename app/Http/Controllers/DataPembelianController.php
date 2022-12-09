@@ -6,9 +6,10 @@ use App\Models\DataSparepart;
 use App\Models\DataPembelian;
 use App\Models\User;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Facades\Storage;
 use DB;
-use PDF; 
+use PDF;
 
 class DataPembelianController extends Controller
 {
@@ -19,16 +20,36 @@ class DataPembelianController extends Controller
      */
     public function index()
     {
+        $pembelian = DataPembelian::simplePaginate(20);
 
-        $tanggal = DataPembelian::all();
-        if (request('search')) {
-            $tanggal->where('tanggal', 'like', '%' . request('search') . '%');
-        }
-        return view('pembelian.index', [
-            'pembelian' => $tanggal,
-        ]);
-        
+        return view('pembelian.index',compact('pembelian'));
+        // $tanggal = DataPembelian::all();
+        // if (request('search')) {
+        //     $tanggal->where('tanggal', 'like', '%' . request('search') . '%');
+        // }
+        // return view('pembelian.index', [
+        //     'pembelian' => $tanggal,
+        // ]);
     }
+    public function filter(Request $request)
+    {
+        $pembelian = DataPembelian::query();
+
+        $date = $request->tanggal;
+
+        if ($date) {
+            $pembelian->where('tanggal','LIKE','%'.$date.'%');
+        }
+
+        $data = [
+            'tanggal' => $date,
+            'pembelian' => $pembelian->simplePaginate(20),
+        ];
+
+        return view('pembelian.index',$data);
+    }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -38,7 +59,7 @@ class DataPembelianController extends Controller
     public function create()
     {
         return view('pembelian.create',[
-            'pembelian'=> DataPembelian::all(), 'data_spareparts'=> DataSparepart::all(),'users'=> User::all()  
+            'pembelian'=> DataPembelian::all(), 'data_spareparts'=> DataSparepart::all(),'users'=> User::all()
         ]);
     }
 
@@ -57,7 +78,7 @@ class DataPembelianController extends Controller
             'tanggal' => 'required',
             ]);
             $DataSparepart = DataSparepart::find($request->sparepart_id);
-            
+
             $data = [
                 // 'customer_id' => $request->customer_id,
                 'user_id' => 'required',
@@ -74,9 +95,9 @@ class DataPembelianController extends Controller
             $DataSparepart = DataSparepart::find($request->sparepart_id);
             $stok = $DataSparepart->stok + $request->jumlah;
             DataSparepart::where('id', $request->sparepart_id)->update(['stok' => $stok]);
-            return redirect('/pembelian')
-            ->with('success', 'pembelian Berhasil Ditambahkan'); 
-            
+            Alert::success('Pembelian', 'Data Pembelian Ditambahkan');
+            return redirect('/pembelian');
+
     }
 
     /**
@@ -123,7 +144,7 @@ class DataPembelianController extends Controller
             'tanggal' => 'required',
             'jumlah' => 'required',
             'total' => 'required',
- 
+
         ];
 
         $DataPembelian =DataPembelian::where('id', $id)->first();
@@ -137,9 +158,9 @@ class DataPembelianController extends Controller
         $DataSparepart = DataSparepart::find($request->sparepart_id);
         $stok = $DataSparepart->stok + $request->jumlah;
         DataSparepart::where('id', $request->sparepart_id)->update(['stok' => $stok]);
+        Alert::success('Pembelian', 'Data Pembelian Diupdate');
 
-
-        return redirect('/pembelian')->with('toast_success', 'pembelian berhasil di edit!');
+        return redirect('/pembelian');
     }
 
     /**
@@ -156,7 +177,8 @@ class DataPembelianController extends Controller
         $stok = $DataSparepart->stok - $DataPembelian->jumlah;
         DataSparepart::where('id', $DataPembelian->sparepart_id)->update(['stok' => $stok]);
         DataPembelian::destroy($id);
-        return redirect('/pembelian')->with('toast_success', 'pembelian berhasil di hapus!');
+        Alert::success('Pembelian', 'Data Pembelian Dihapus');
+        return redirect('/pembelian');
     }
 
 

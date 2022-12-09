@@ -22,7 +22,9 @@
                         <label for="nama">Nama Pegawai</label>
                         <select name="user_id" class="form-control" id="user_id">
                             @foreach ($users as $user)
+                            @if($user->level == 'Admin')
                             <option value="{{$user->id}}">{{$user->nama}}</option>
+                            @endif
                             @endforeach
                         </select>
                     </div>
