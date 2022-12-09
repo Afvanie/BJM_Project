@@ -8,6 +8,7 @@
             </div>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Tanggal : </b>{{$rincianbiaya->tanggal}}</li>
                     <li class="list-group-item"><b>Id Rincian Biaya        : </b>{{$rincianbiaya->id}}</li>
                     <li class="list-group-item"><b>Sparepart : </b>{{$rincianbiaya->sparepart->nama}}</li>
                     <li class="list-group-item"><b>Service : </b>{{$rincianbiaya->service->nama}}</li>

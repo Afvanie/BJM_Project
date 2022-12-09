@@ -35,11 +35,15 @@
                             @endforeach
                         </select>
                     </div>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal</label>
+                        <input type="date" name="tanggal" class="form-control" id="tanggal" ariadescribedby="tanggal">
+                    </div>
                     <!-- <div class="form-group">
                         <label for="jumlah">Biaya</label>
                         <input type="text" name="biaya" class="form-control" id="biaya" aria-describedby="biaya">
-                    </div>  --> 
-                    <br>                    
+                    </div>  -->
+                    <br>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

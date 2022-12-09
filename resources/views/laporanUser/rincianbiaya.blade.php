@@ -18,7 +18,9 @@
 	<table class='table table-bordered'>
 		<thead>
 			<tr>
+
                 <th>Id Rincian</th>
+                <th>Tanggal</th>
                 <th>Service</th>
                 <th>Sparepart</th>
                 <th>Biaya Service</th>
@@ -29,11 +31,13 @@
 		<tbody>
         @foreach ($rincianbiaya as $rinciannya)
             <tr>
+
                 <td>{{$loop -> iteration}}</td>
+                <td>{{$rinciannya->tanggal}}</td>
                 <td>{{$rinciannya->service->nama}}</td>
                 <td>{{$rinciannya->sparepart->nama}}</td>
                 <td>{{$rinciannya->biayaService}}</td>
-                <td>{{$rinciannya->hargaSparepart}}</td>
+                <td>{{$rinciannya->sparepart->harga}}</td>
                 <td>{{$rinciannya->biaya}}</td>
 			</tr>
 			@endforeach
