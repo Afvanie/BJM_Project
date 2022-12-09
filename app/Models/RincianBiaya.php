@@ -8,10 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class RincianBiaya extends Model
 {
     use HasFactory;
-    protected $table='rincianbiaya'; 
-    protected $primaryKey = 'id'; 
+    protected $table='rincianbiaya';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
+        'tanggal',
         'id',
         // 'customer_id',
         'service_id',
