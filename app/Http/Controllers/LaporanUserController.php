@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DataTransaksi;
 use Illuminate\Http\Request;
 use App\Models\RincianBiaya;
 use PDF;
@@ -19,7 +20,7 @@ class LaporanUserController extends Controller
             $rincianbiaya = RincianBiaya::all();
 
             $pdf = PDF::loadview('laporanUser.rincianbiaya',['rincianbiaya'=>$rincianbiaya]);
-            return $pdf->download('laporan-rincianbiaya.pdf');
+            return $pdf->stream('laporan-rincianbiaya.pdf');
         }
         else {
             $transaksi = DataTransaksi::all();
