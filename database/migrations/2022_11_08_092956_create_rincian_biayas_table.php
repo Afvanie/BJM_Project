@@ -14,6 +14,7 @@ class CreateRincianBiayasTable extends Migration
     public function up()
     {
         Schema::create('rincianbiaya', function (Blueprint $table) {
+            $table->date('tanggal');
             $table->id();
             // $table->unsignedBigInteger('customer_id');
             // $table->foreign('customer_id')->references('id')->on('data_customers');
